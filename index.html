@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3f0ea" />
+  <meta name="description" content="RED POLO — Premium men's clothing and accessories. Timeless essentials and the refined UDUOOCI collection." />
+  <meta property="og:title" content="RED POLO — Premium Men's Clothing & Accessories" />
+  <meta property="og:description" content="Timeless essentials for modern everyday life." />
+  <meta property="og:type" content="website" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>RED POLO — Premium Men's Clothing & Accessories</title>
+</head>
+<body>
+  <div class="announcement">Complimentary shipping on orders over ₹2,500 <span>•</span> The new season has arrived</div>
+  <header class="site-header" id="site-header">
+    <button class="mobile-menu-button icon-button" aria-label="Open menu" data-action="menu">☰</button>
+    <a class="wordmark" href="#top" aria-label="Red Polo home"><span>RED</span> POLO</a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#new-arrivals">New arrivals</a><a href="#shop" data-category="T-Shirts">T-shirts</a><a href="#shop" data-category="Shirts">Shirts</a><a href="#shop" data-category="Belts">Belts</a><a href="#shop" data-category="Shoes">Shoes</a><a href="#shop" data-category="Socks">Socks</a><a href="#uduooci">UDUOOCI</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-action" data-action="search">Search</button>
+      <button class="text-action account-action" data-action="account">Account</button>
+      <button class="icon-button" aria-label="Wishlist" data-action="wishlist">♡<sup id="wishlist-count">0</sup></button>
+      <button class="icon-button" aria-label="Shopping bag" data-action="cart">Bag <sup id="cart-count">0</sup></button>
+    </div>
+    <div class="mobile-actions"><button class="icon-button" aria-label="Search" data-action="search">⌕</button><button class="icon-button" aria-label="Wishlist" data-action="wishlist">♡</button><button class="icon-button" aria-label="Shopping bag" data-action="cart">▢</button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-content"><p class="eyebrow">RED POLO / SS26</p><h1>Timeless<br />menswear.</h1><p class="hero-copy">Classic essentials designed for modern everyday life.</p><div class="hero-actions"><a class="button button-light" href="#shop">Shop collection <span>↗</span></a><a class="button button-ghost-light" href="#uduooci">Explore UDUOOCI <span>↗</span></a></div></div>
+      <div class="hero-caption"><span>01 / 03</span><span>Everyday confidence</span></div>
+    </section>
+
+    <section class="section category-section" id="shop"><div class="section-heading"><div><p class="eyebrow">CURATED FOR THE EVERYDAY</p><h2>Shop the collection</h2></div><button class="underlined" data-category="All">View all pieces <span>↗</span></button></div><div class="category-grid" id="category-grid"></div></section>
+
+    <section class="section essentials-section"><div class="section-heading"><div><p class="eyebrow">THE DAILY EDIT</p><h2>The essentials</h2><p class="muted">Pieces you’ll reach for every day.</p></div><div class="section-controls"><button class="round-control" data-scroll="prev" aria-label="Previous products">←</button><button class="round-control" data-scroll="next" aria-label="Next products">→</button></div></div><div class="product-scroller" id="featured-products"></div></section>
+
+    <section class="editorial-banner" id="uduooci"><div class="editorial-image"></div><div class="editorial-copy"><p class="eyebrow">THE COLLECTION</p><h2>UDUOOCI</h2><p class="editorial-kicker">Modern essentials</p><p>An elevated collection of refined everyday pieces, designed around simplicity, comfort and timeless style.</p><button class="button button-dark" data-collection="UDUOOCI">Shop UDUOOCI <span>↗</span></button></div></section>
+
+    <section class="section new-section" id="new-arrivals"><div class="section-heading"><div><p class="eyebrow">JUST IN</p><h2>New arrivals</h2></div><button class="underlined" data-filter-new="true">View all new arrivals <span>↗</span></button></div><div class="new-arrival-grid" id="new-products"></div></section>
+
+    <section class="quote-section"><p class="quote-mark">“</p><blockquote>Great everyday style doesn’t need to be complicated.</blockquote><p class="eyebrow">THE RED POLO POINT OF VIEW</p></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><div class="footer-brand"><a class="wordmark" href="#top"><span>RED</span> POLO</a><p>Timeless men’s essentials for everyday life.</p><div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div></div><div class="footer-links"><div><h4>Shop</h4><a href="#shop">T-shirts</a><a href="#shop">Shirts</a><a href="#shop">Belts</a><a href="#shop">Shoes</a><a href="#shop">Socks</a></div><div><h4>About</h4><a href="#about">About us</a><a href="#uduooci">UDUOOCI</a><a href="#">Contact</a></div><div><h4>Help</h4><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Size guide</a><a href="#">FAQ</a></div></div><div class="newsletter"><p class="eyebrow">STAY IN THE KNOW</p><h3>Join the RED POLO list.</h3><p>New arrivals, collections and considered offers.</p><form id="newsletter-form"><input type="email" placeholder="Your email address" required /><button aria-label="Join newsletter">↗</button></form><small id="newsletter-status"></small></div></div><div class="footer-bottom"><span>© 2026 RED POLO</span><span>Privacy policy &nbsp; Terms & conditions</span><span>Made for the everyday.</span></div></footer>
+
+  <div class="overlay" id="overlay"></div><aside class="drawer cart-drawer" id="cart-drawer" aria-label="Shopping bag"><div class="drawer-header"><h3>Your bag <span id="drawer-count">0</span></h3><button class="close-button" data-action="close">×</button></div><div class="drawer-content" id="cart-items"></div><div class="drawer-footer"><div class="shipping-note">You’re <strong id="shipping-away">₹2,500</strong> away from complimentary shipping.</div><div class="summary-row"><span>Subtotal</span><strong id="cart-total">₹0</strong></div><button class="button button-dark full-width" data-action="checkout">Checkout <span>↗</span></button><a class="continue-shopping" href="#shop" data-action="close">Continue shopping</a></div></aside>
+  <aside class="drawer side-drawer" id="mobile-drawer"><div class="drawer-header"><a class="wordmark" href="#top"><span>RED</span> POLO</a><button class="close-button" data-action="close">×</button></div><nav class="mobile-nav"><a href="#new-arrivals">New arrivals</a><a href="#shop" data-category="T-Shirts">T-shirts</a><a href="#shop" data-category="Shirts">Shirts</a><a href="#shop" data-category="Belts">Belts</a><a href="#shop" data-category="Shoes">Shoes</a><a href="#shop" data-category="Socks">Socks</a><a href="#uduooci">UDUOOCI</a></nav><div class="drawer-note">Timeless essentials.<br />Everyday confidence.</div></aside>
+  <div class="modal" id="product-modal"><button class="close-button modal-close" data-action="close">×</button><div id="modal-content"></div></div>
+  <div class="search-panel" id="search-panel"><div class="search-inner"><button class="close-button" data-action="close">×</button><p class="eyebrow">SEARCH RED POLO</p><input id="search-input" type="search" placeholder="Try “black shirt”" autocomplete="off" /><div id="search-results"></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
